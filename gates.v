@@ -1,13 +1,13 @@
 module m1(A,B,C,D,E,F,G,H,I);
 input A,B;
 output C,D,E,F,G,H,I;
-and(C,A,B);
-or(D,A,B);
-nand(E,A,B);
-xor(F,A,B);
-nor(G,A,B);
-xnor(H,A,B);
-not(I,A,B);
+assign C=A&B;
+assign D=A|B;
+assign E=!(A&B);
+assign F=!(A|B);
+assign H=!A;
+assign I=A^B;
+assign G=!(A^B);
 endmodule
 
 module test;
